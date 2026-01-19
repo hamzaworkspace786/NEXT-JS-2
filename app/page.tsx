@@ -8,6 +8,9 @@ function page() {
       <Link href="/dashboard" className="text-white">
         Go to Dashboard
       </Link>
+      <Link href="/about" className="text-white">
+        About
+      </Link>
     </div>
   );
 }
