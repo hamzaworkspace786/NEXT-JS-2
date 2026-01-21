@@ -8,6 +8,8 @@
 
 // The third party packaged that use client side features cannot be displayed in a server component indeed we can add a "use client" directive at the top of the file to make it a client component but in that case we will loose all the server side capabilities and the sensitve data handling features of the server component.So we make a client component seperately and call it within the server component to achieve both client side features and server side features.
 
+// All othe client server patterns work but you cant import a server component into a client component directly.Instead you can pass it as a child component from a server component to a client component.(Prop)
+
 export const serverSideFunction = () => {
     console.log(
         `use multiple libraries,
